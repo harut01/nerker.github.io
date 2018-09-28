@@ -1,0 +1,330 @@
+.wrongLoginOrPassword{    
+    display: none;
+}
+
+.wrongLoginOrPassword p{
+    color:red;
+    padding-top: 10px;
+}
+
+#popup{
+    width: 800px;
+    max-height: 800px;
+    background-color: #ffffff;
+    position: absolute;
+    left: calc(50% - 400px);
+    top:  calc(50% - 400px);
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.popupClose{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+}
+.insertPopupCont, .updatePopupCont{
+    overflow: auto;
+    text-align: center;
+}
+.updateBtn{
+    padding: 5px 20px;
+}
+
+.updateInputItem{
+    margin: 10px;
+    position: relative;
+}
+
+.updateInputItem label{
+    width: 150px;
+}
+
+.updateInputItem{
+    line-height:100%;
+}
+
+.addNewItem{
+    /* width: 40px; */
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+.button{
+    padding: 15px 20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+}
+.createNewPage{
+    margin: auto;
+}
+
+#page_title{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.addToMenuSelect{
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+}
+
+#sortable li {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+#sortable li div{
+    color: white;
+    padding: 15px;
+    background-color: #616161!important;
+}
+
+.menuOrderBtn{
+    margin-left: 50px;
+}
+
+table tbody td{
+    max-width: 100px;
+    box-sizing: border-box;
+  }
+  table tbody td div{
+    height: 40px;
+    overflow: hidden;
+  }
+
+.mrg-l-lg{
+    margin-left: 20px;
+}
+
+.mrg-r-lg{
+    margin-right: 20px;
+}
+.mrg-t-lg{
+    margin-top: 20px;
+}
+.mrg-b-lg{
+    margin-bottom: 20px;
+}
+
+.mrg-lg{
+    margin: 20px;
+}
+
+.mrg-l-sm{
+    margin-left: 5px;
+}
+
+.mrg-r-sm{
+    margin-right: 5px;
+}
+.mrg-t-sm{
+    margin-top: 5px;
+}
+.mrg-b-sm{
+    margin-bottom: 5px;
+}
+
+.mrg-sm{
+    margin: 5px;
+}
+
+
+.mrg-l{
+    margin-left: 15px;
+}
+
+.mrg-r{
+    margin-right: 15px;
+}
+.mrg-t{
+    margin-top: 15px;
+}
+.mrg-b{
+    margin-bottom: 15px;
+}
+
+.mrg{
+    margin: 15px;
+}
+
+.pdg-l-lg{
+    padding-left: 20px;
+}
+.pdg-r-lg{
+    padding-right: 20px;
+}
+.pdg-t-lg{
+    padding-top: 20px;
+}
+.pdg-b-lg{
+    padding-bottom: 20px;
+}
+.pdg-lg{
+    padding: 20px;
+}
+
+
+.pdg-l-sm{
+    padding-left: 5px;
+}
+.pdg-r-sm{
+    padding-right: 5px;
+}
+.pdg-t-sm{
+    padding-top: 5px;
+}
+.pdg-b-sm{
+    padding-bottom: 5px;
+}
+.pdg-sm{
+    padding: 5px;
+}
+
+.pdg-l{
+    padding-left: 15px;
+}
+.pdg-r{
+    padding-right: 15px;
+}
+.pdg-t{
+    padding-top: 15px;
+}
+.pdg-b{
+    padding-bottom: 15px;
+}
+.pdg{
+    padding: 15px;
+}
+
+
+
+
+.card-body{
+    padding: 5px 20px;
+}
+.brown-txt{
+    color: #616161!important;
+}
+.brown{
+    background-color: #616161!important;
+}
+
+.white-txt{
+    color: white;
+}
+.sortable{
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.sortable .sortable{
+    width: 95%;
+    /* position: absolute; */
+}
+#sortable{
+    padding: 0;
+}
+.placeholder {
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sortable {
+    min-height: 1px;
+}
+.file_label{
+    padding: 10px;
+    background: red; 
+    display: table;
+    color: #fff;
+    margin: auto;
+}
+
+
+
+input[type="file"] {
+    display: none;
+}
+
+.left-aligned{
+    text-align: left;
+}
+
+.sub_list{
+    padding-top: 4px;
+}
+.pagination{
+    display: table;
+    margin: auto;
+    padding: 10px; 
+}
+
+.pagination li {
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.pagination li a{    
+    padding: 8px 16px;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+}
+
+.pagination li.active_pg a{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.pagination li:not(.active_pg) a:hover {background-color: #ddd;}
+
+.pagination li.active_pg {
+    border-radius: 5px;
+}
+
+.pagination li {
+    transition: background-color .3s;
+}
+
+.pagination li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.z-index-2{
+    z-index: 2;
+}
+
+#updatePageBtn{
+    display: none;
+}
+
+
+@media screen and (min-width: 750px) {
+    
+}
+
+@media screen and (max-width: 500px) {    
+    .pagination li {
+        margin: 4px 0;    
+    }
+}

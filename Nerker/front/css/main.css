@@ -1,0 +1,290 @@
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+body{}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+nav ul li {
+    display: block;
+    position: relative;
+}
+nav ul li ul li{    
+    width: 100%;
+}
+nav li ul{
+    display: none; 
+    background: white;
+}
+
+nav ul li a{
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      white-space: nowrap;
+      color: #fff;
+}
+nav ul li>a:hover { 
+    background: #000; 
+}
+
+nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+}    
+
+
+/* li:hover a { background: #1bc2a2; } */
+
+nav li:hover li a:hover { 
+    background: #000; 
+ }
+
+#menuList li ul li { border-top: 0; }
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+
+nav ul:after { clear: both; }
+
+.inl-bl{
+    display: inline-block;
+}
+
+.product_name{
+    padding-left: 20px;
+}
+
+.desc_p{
+    max-height: 62%;
+    overflow: auto;
+}
+
+.product_desc{
+    height: 100px;
+    overflow: hidden;
+}
+
+.product-pg-price{
+    margin: 20px 0;
+}
+
+
+.price-box{
+    text-align: center;
+}
+
+.img{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.horizontal-scroll-wrapper{    
+    display:block;
+    width:400px;
+    max-height:1000px;
+    margin:0;
+    overflow-y:auto;
+    overflow-x:hidden;
+    transform:rotate(-90deg);
+    transform-origin:center top;
+    margin-top: 200px;
+}
+
+
+.rectangles > div{
+    width: 380px;
+    /* height: 120px; */
+    /* margin: 50px 10px; */
+    /* margin: 15px 3px; */
+    padding: 5px;
+    transform: rotate(90deg);
+    /* transform-origin:right right; */    
+    margin-left: 30px;
+}
+
+.rating-star{
+    cursor: pointer;
+}
+
+.tooltiptext{    
+    display: none;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 10000;
+}
+
+
+/*_________________ menu_____________________________*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/* Starter CSS for Flyout Menu */
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#cssmenu{
+  padding-left: 15px;
+}
+
+#cssmenu a{
+  color: rgba(0, 0, 0, 0.7);  
+  text-decoration: none;
+}
+
+#cssmenu li ul{
+  width: 90%;
+  margin-left: 5%;
+}
+
+#cssmenu ul li.hover,
+#cssmenu ul li {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul li a{
+  color: rgba(0, 0, 0, 0.7);
+  display: block;
+  box-sizing: border-box;
+  padding: 5px; 
+}
+#cssmenu ul li > ul {
+  display: block;
+}
+
+
+#cssmenu li:not(.active)>a:hover{
+  color: transparent;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000;
+}
+
+#cssmenu ul li.active > a span{
+  padding-bottom: 2px;
+  border-bottom: 2px solid #27E1CE;
+}
+
+/*_________________ menu_end _____________________________*/
+
+
+.products_container{
+    width: 70%;
+}
+
+.product_price{
+  color:#27E1CE;
+}
+
+.products_conf{
+    width: 70%;
+    margin: auto;
+    min-height: 2px;
+}
+
+.card{    
+    background: #ffffff none repeat scroll 0 0;
+    margin: 15px auto;
+    padding: 20px;
+    border: 0 solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.categoryMenu{
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.fixed{
+    top: 0px;
+    position: fixed;    
+}
+
+.full-width{
+    width: 100%;
+}
+
+#productSearch{
+    border: 0;
+    border-bottom: 2px solid #1976D2;
+    font-size: 30px;
+    line-height: 35px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    float: right;
+    max-width: 100%;
+}
+#productSearch{
+    outline: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .product_info{
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #fh5co-header{
+        position: fixed;
+        background-color: white;
+        z-index: 200;
+    }
+}
+
+.vert_scroll_cont{
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 500px) {    
+    .product_info{
+        display: block;
+    }
+    .product_info p{
+        margin-bottom: 5px;
+    }
+    .vert_scroll_cont .horizontal-scroll-wrapper{
+        position: absolute;
+        left: -200px;
+    }
+    /* .sameProducer{
+        display: none;
+    } */
+    .categoryMenu{
+        display: none;
+    }
+
+    
+    
+}

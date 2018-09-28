@@ -1,0 +1,30 @@
+{
+    "admin":{
+        "login": "admin",
+        "password": "admin"
+    },
+	"tables_to_dont_show":[
+		"created_pages",
+		"menu"
+	],
+	"footer_items":[
+		{
+			"title":"Our services",
+			"items":[
+				{"text":"A service","href":"index.html"},
+				{"text":"B service","href":"index.html"},
+				{"text":"C service","href":"index.html"},
+				{"text":"D service","href":"index.html"}
+			]
+		},
+		{
+			"title":"We in social media",
+			"items":[
+				{"text":"","logo":"icon-twitter","href":"#"},
+				{"text":"","logo":"icon-facebook","href":"#"},
+				{"text":"","logo":"icon-google-plus","href":"#"},
+				{"text":"","logo":"icon-instagram","href":"#"}			
+			]			
+		}
+	]
+}
